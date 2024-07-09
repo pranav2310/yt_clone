@@ -1,0 +1,130 @@
+
+.thumbnail{
+    width: 100%;
+}
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+.search-bar{
+    display: block;
+}
+.video-title{
+    display: inline-block;
+    margin-top: 0px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: black;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+@media (max-width: 750px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width:751px) and (max-width:999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media( min-width:1000px ){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 14px;
+    }
+    .video-title{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.chan-prof{
+    width: 36px;
+    border-radius: 25px;
+}
+.thumb-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+.author,.views{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    text-decoration: none;
+}
+.author{
+    margin-bottom: 4px;
+}
+.video-time{
+    font-family: Robot, Arial;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    padding: 6px;
+    border-radius: 3px;
+}
+.chan-pic{
+    position: relative;
+    display: inline-block;
+}
+.chan-pic .chan-tool-tip{
+    background-color: white;
+    width: 200px;
+    padding-left: 12px;
+    padding-right: 12px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    z-index: 500;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    border-radius: 5px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    
+}
+.chan-pic:hover .chan-tool-tip{
+    opacity: 1;
+}
+.tt-prof{
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+.tt-author{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.tt-subs{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(96,96,96);
+
+}
